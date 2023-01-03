@@ -1,0 +1,158 @@
+.head {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.card {
+    width: auto;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px rgb(192, 15, 198);
+}
+
+
+.card-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card-body {
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.card-date {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-title,
+.card-excerpt {
+    font-family: 'Playfair Display', serif;
+}
+
+.card-date,
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-date,
+.card-excerpt {
+    color: #777;
+}
+.mini-image{
+    width: 150px;
+
+}
+
+
+.rating{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row-reverse ;
+  }
+  .rating input{
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+  }
+  .rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    position: absolute;
+    left: 4px;
+    color: #030b0f;
+    transition: 0.5s;
+  }
+  .rating input:nth-child(2n + 1)::before{
+    right: 4px;
+    left: initial;
+  }
+  .rating input:hover ~ input::before,
+  .rating input:hover::before,
+  .rating input:checked ~ input::before,
+  .rating input:checked::before{
+    color: #1f9cff;
+  }
+  /*test logo*/
+
+  body {
+    background: #eeeecf;
+    margin: 0;
+  }
+  
+  .m-logo {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    height: auto;
+    margin: 20vh auto 0;
+  }
+  
+  .box {
+    opacity: 0;
+    animation: wavey 5s ease alternate infinite;
+  }
+  .box.wave2 {
+    animation-delay: 0.1s;
+  }
+  .box.wave3 {
+    animation-delay: 0.3s;
+  }
+  .box.wave4 {
+    animation-delay: 0.5s;
+  }
+  .box.wave5 {
+    animation-delay: 0.7s;
+  }
+  .box.wave6 {
+    animation-delay: 0.9s;
+  }
+  .box.wave7 {
+    animation-delay: 1.1s;
+  }
+  
+  @keyframes wavey {
+    90% {
+      opacity: 1.2;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+    
+  
+/* Responsive Styling */
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .card-image{
+        justify-content: center;
+        align-items: center;
+    }
+    .card-excerpt {
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    }
